@@ -1,0 +1,144 @@
+@import "bootstrap/bootstrap";
+
+@import "mixins";
+
+html, body{
+    height:100%; 
+    margin:0;
+    padding:0
+}
+
+body {
+    background-image: image-url('backgrounds/8.jpg'); 
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+.heading {
+    font-family: $regular;
+    font-weight: 200;
+    text-transform: capitalize;
+    text-rendering: optimizelegibility;
+    color: $white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @extend .heading;
+    margin: 0;
+    padding: 0;
+}
+
+h1 { font-size: 150px }      
+h2 { font-size: 28px } 
+h3 { font-size: 24px }   
+
+a {
+    color: $white;
+}  
+
+.white {
+    color: $white;
+}
+
+#app {
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.textshadow {
+    text-shadow: 1px 3px 1px #ff8d2f;
+    filter: dropshadow(color=#ff8d2f, offx=1, offy=3);
+}
+
+.container {
+    display: none;
+}
+
+.loader {
+  background: url("../images/loader.png") no-repeat transparent;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation: spin 900ms linear infinite;
+  -webkit-transform-origin: 50% 100%;
+}
+
+
+#weather {
+    text-align: center;
+}
+
+#timedate {
+    text-align: center;
+}
+
+#location {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+    margin-left: 20px;
+}
+
+.time {
+    @extend h1;
+    font-weight: bold;
+    letter-spacing: -8px;
+}
+
+.place {
+    @extend .heading;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.date {
+    @extend h2;
+    float: left;
+}
+
+.weather {
+    font-family: $weather;
+    font-size: 100px;
+    color: $white;
+    display: inline;
+    margin-right: 20px;
+}
+
+.temp {
+    @extend .heading;
+    font-size: 80px;
+    font-weight: bold;
+    display: inline;
+    margin-right: 30px;
+}
+
+.overview {
+    @extend h3;
+    margin-top: 30px;
+    letter-spacing: 3px;
+}
+
+.parent {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin-top: -70px;
+}
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+}

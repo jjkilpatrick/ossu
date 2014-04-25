@@ -1,0 +1,28 @@
+{
+	"name" : "informe",
+	"version" : "0.1",
+	"manifest_version" : 2,
+
+	"description" : "notifcation center for all my important things",
+	"icons" : {
+      "128" : "library/images/icon128.png",
+      "16" :  "library/images/icon16.png",
+      "96" :  "library/images/icon96.png"
+   	},
+
+	"chrome_url_overrides" : {
+      "newtab" : "index.html"
+   },
+
+	"permissions": [ 
+		"storage", 
+		"geolocation", 
+		"tabs", 
+		"http://api.wunderground.com/api",
+      "*://use.typekit.net/*",
+      "webRequest",
+      "webRequestBlocking"
+   ],
+
+   "content_security_policy": "script-src 'self' https://use.typekit.net; object-src 'self'"
+}

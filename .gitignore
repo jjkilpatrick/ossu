@@ -15,7 +15,7 @@ Thumbs.db
 
 # Misc #
 ########
-webapp/.sass-cache
+.sass-cache
 .travis.yml
 npm-debug.log
 node_modules/

@@ -1,0 +1,31 @@
+{
+  "name": "ossu",
+  "version": "0.0.1",
+  "description": "Google Chrome Notification Extension",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt-contrib-requirejs": "~0.4.4",
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-compass": "~0.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjkilpatrick/ossu.git"
+  },
+  "keywords": [
+    "google",
+    "chrome",
+    "weather",
+    "time",
+    "location"
+  ],
+  "author": "John Kilpatrick",
+  "license": "GNU 2.0",
+  "bugs": {
+    "url": "https://github.com/jjkilpatrick/ossu/issues"
+  }
+}

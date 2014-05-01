@@ -218,6 +218,7 @@ define(["jquery", "jquery.alpha", "jquery.beta"], function($) {
                 "partlysunny": "partlysunny.jpg",
                 "partlycloudy": "partlycloudy.jpg",
                 "mostlysunny": "mostlysunny.jpg",
+                "rain": "rain.jpg"
             }
 
             $('body').css('background-image', 'url(library/images/backgrounds/' + backgroundMap[data.condition] + ')');

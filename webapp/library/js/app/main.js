@@ -205,10 +205,22 @@ define(["jquery", "jquery.alpha", "jquery.beta"], function($) {
             chrome.storage.sync.get('cachedWeather', function(data) {
                 if (data.cachedWeather) {
                     if (String(data.cachedWeather.condition).length > 0) {
+                        self.renderBackground(data.cachedWeather);
                         self.renderWeather(data.cachedWeather);
                     }
                 }
             });
+        }
+
+        this.renderBackground = function(data) {
+            var backgroundMap = {
+                "mostlycloudy": "mostlycloudy.jpg",
+                "partlysunny": "partlysunny.jpg",
+                "partlycloudy": "partlycloudy.jpg",
+                "mostlysunny": "mostlysunny.jpg",
+            }
+
+            $('body').css('background-image', 'url(library/images/backgrounds/' + backgroundMap[data.condition] + ')');
         }
 
         this.renderWeather = function(data) {
@@ -262,7 +274,7 @@ define(["jquery", "jquery.alpha", "jquery.beta"], function($) {
             $('.overview').append('Mostly: ' + data.weather + ' - Wind: ' + data.wind + ' ' + data.windMPH + 'mph ' + data.windDir);
         }
 
-        this.init()
+        this.init();
 
     };
 

@@ -1,19 +1,15 @@
 {
-    "name": "informe",
+    "name": "ossu",
     "version": "0.1",
     "manifest_version": 2,
-
-    "description": "Notification Centre",
+    "description": "Ossu - Notification Centre",
     "icons": {
-        "128": "library/images/icon128.png",
-        "16": "library/images/icon16.png",
-        "96": "library/images/icon96.png"
+        "16": "webapp/library/images/ossu-16.png",
+        "128": "webapp/library/images/ossu-128.png"
     },
-
     "chrome_url_overrides": {
-        "newtab": "index.html"
+        "newtab": "webapp/index.html"
     },
-
     "permissions": [
         "storage",
         "geolocation",
@@ -23,6 +19,5 @@
         "webRequest",
         "webRequestBlocking"
     ],
-
     "content_security_policy": "script-src 'self' https://use.typekit.net; object-src 'self'"
 }

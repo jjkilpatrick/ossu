@@ -213,12 +213,52 @@ define(["jquery", "jquery.alpha", "jquery.beta"], function($) {
         }
 
         this.renderBackground = function(data) {
+
+            console.log(data.condition);
+
             var backgroundMap = {
+                "fog": "fog.jpg",
+                "hazy": "hazy.jpg",
+                "nt_fog": "fog.jpg",
+                "nt_hazy": "hazy.jpg",
+                // "chanceflurries": 
+                "chancesnow": "chancesnow.jpg",
+                // "chancesleet":
+                "chancerain": "chancerain.jpg",
+                "chancetstorms": "chancetstorms.jpg",
+                "tstorms": "chancetstorms.jpg",
+                "nt_tstorms": "chancetstorms.jpg",
+                "clear": "clear.jpg",
+                "sunny": "sunny.jpg",
+                "cloudy": "cloudy.jpg",
+                // "flurries"
+                // "nt_flurries"
+                "fog": "fog.jpg",
+                "hazy": "hazy.jpg",
+                "nt_fog": "fog.jpg",
+                "nt_hazy": "hazy.jpg",
                 "mostlycloudy": "mostlycloudy.jpg",
                 "partlysunny": "partlysunny.jpg",
                 "partlycloudy": "partlycloudy.jpg",
                 "mostlysunny": "mostlysunny.jpg",
-                "rain": "rain.jpg"
+                // "sleet"
+                // "nt_sleet"
+                "rain": "rain.jpg",
+                "nt_rain": "rain.jpg",
+                "snow": "chancesnow.jpg",
+                "nt_snow": "chancesnow.jpg",
+                // "nt_chanceflurries": "",
+                "nt_chancerain": "rain.jpg",
+                // "nt_chancesleet": "",
+                // "nt_chancesnow": "",
+                "nt_chancetstorms": "chancetstorms.jpg",
+                "nt_clear": "nt_clear.jpg",
+                "nt_sunny": "nt_sunny.jpg",
+                // "nt_cloudy": "",
+                // "nt_mostlycloudy": "",
+                // "nt_partlysunny": "",
+                // "nt_partlycloudy": "",
+                // "nt_mostlysunny": ""
             }
 
             $('body').css('background-image', 'url(library/images/backgrounds/' + backgroundMap[data.condition] + ')');

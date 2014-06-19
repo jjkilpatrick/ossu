@@ -6,8 +6,8 @@ define(["jquery", "jquery.alpha", "jquery.beta"], function($) {
 
         var self = this;
 
-        var clientId = "615387787130.apps.googleusercontent.com",
-            apiKey = "AIzaSyCTQEqICWulDkacI5dQvdWpsl39eHI7wMs";
+        var clientId = "",
+            apiKey = "";
 
         this.init = function() {
             // Time
